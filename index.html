@@ -31,7 +31,7 @@
       <div id="home">
   <h1>Welcome</h1>
       <p><strong>USTOR</strong> is a free, portable, extendable, high-performance
-      <strong>Unique Capping Solution</strong> indended for use in Advertising Servers and Real-Time Bidding (RTB).</p>
+      <strong>Unique Capping Solution</strong> intended for use in Advertising Servers and Real-Time Bidding (RTB).</p>
 
   <h1>Blog Posts</h1>
   <ul class="posts">
@@ -42,23 +42,23 @@
 
   <h1>Overview</h1>
       <p>USTOR intends to replace <strong>Redis</strong> and <strong>Memcached</strong> for the application of Unique Capping.
-      Both of these nosql hash-store solutions are great, when it comes down to filtering
-      the amount of Unique Impression USTOR provides a simpiler, light-weight alternative.</p>
+      Both of these NoSQL hash-store solutions are great when it comes down to filtering
+      the amount of Unique Impression USTOR provides a simpler, light-weight alternative.</p>
       <ul>
         <li>
-        <strong>Memory is pre-allocated</strong>: this means no nasty supprises, you know how much memory will be required
+        <strong>Memory is pre-allocated</strong>: this means no nasty surprises, you know how much memory will be required
         for your running system and as such the memory limits will never be exceeded. This also prevents bad cache performance
-        and the over-head of dynamically allocated memory.</li>
+        and the overhead of dynamically allocated memory.</li>
         <li>
         <strong>Threaded Execution</strong>: each CPU core is detected and used as individual read threads, in a Unique Store
         system, writes will only be once you have won an impression in RTB or already displayed an advertisement to the user,
         so writes are usually limited to one thread to prevent race conditions, however, read operations can and are threaded
-        to increase through-put. On average aa runining system could be processing 6,000 Queries-Per-Second (QPS) which
+        to increase throughput. On average a running system could be processing 6,000 Queries-Per-Second (QPS) which
         depending on how many campaigns you are running could result in around 14,000 or more read QPS to USTOR. While writes
-        (how much traffic you have won and displayed an advert to) would be around 100-500 QPS on average.</li>
+        (how much traffic you have won and displayed an advert too) would be around 100-500 QPS on average.</li>
         <li>
-        <strong>Single Server Solution</strong> t the moment free releases of USTOR are a single server solution, meaning you
-        can either run it locally on one server or a dedicated server. For most uses this is enough performance necessary for
+        <strong>Single Server Solution</strong> at the moment free releases of USTOR are a single server solution, meaning you
+        can either run it locally on one server or a dedicated server. For most uses, this is enough performance necessary for
         many large applications.</li>
         <li>
         <strong>Bespoke Development</strong>: we maintain custom versions of USTOR that can best match your application,
