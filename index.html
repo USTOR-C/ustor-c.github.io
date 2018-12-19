@@ -53,7 +53,7 @@
         <li>
         <strong>Threaded Execution</strong>: each CPU core is detected and used as individual read threads, in a Unique Store
         system, writes will only be once you have won an impression in RTB or already displayed an advertisement to the user,
-        so writes are usually limited to one thread to prevent race conditions, however, read operations can and are threaded
+        as such writes are usually limited to one thread to prevent race conditions, however, read operations can and are threaded
         to increase throughput. On average a running system could be processing 6,000 Queries-Per-Second (QPS) which
         depending on how many campaigns you are running could result in around 14,000 or more read QPS to USTOR. While writes
         (how much traffic you have won and displayed an advert too) would be around 100-500 QPS on average.</li>
