@@ -80,13 +80,11 @@
         <strong>Threaded Execution</strong>: each CPU core is detected and used as individual read threads, in a Unique Store
         system, writes will only be once you have won an impression in RTB or already displayed an advertisement to the user,
         as such writes are limited to one thread to prevent race conditions without locks, however, read operations can and are threaded
-        to increase throughput. On average a running system could be processing 6,000 Queries-Per-Second (QPS) which
-        depending on how many campaigns you are running could result in around 14,000 or more read QPS to USTOR. While writes
-        (how much traffic you have won and displayed an advert too) would be around 100-500 QPS on average.</li>
+        to increase throughput.</li>
         <li>
         <strong>Single Server Solution</strong> at the moment free releases of USTOR are a single server solution, meaning you
         can either run it locally on one server or a dedicated server. For most uses, this is enough performance necessary for
-        many large applications.</li>
+        most large applications.</li>
         <li>
         <strong>Bespoke Development</strong>: we maintain custom versions of USTOR that can best match your stack/architecture,
         allowing you to get the most out of your hardware, our free public releases are great general purpose samples of what we can achieve.
